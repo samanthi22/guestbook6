@@ -20,11 +20,17 @@
     <%= form.label :secret %>
     <%= form.text_field :secret %>
   </div>
+  
+  <fieldset>
+    <legend>Country</legend>
+      <%= form.radio_button :country, 'USA' %> <%= form.label "person_country_usa",
+      "USA" %><br>
+      <%= form.radio_button :country, 'Canada' %> <%= form.label "person_country_canada",
+      "Canada" %><br>
+      <%= form.radio_button :country, 'Mexico' %> <%= form.label "person_country_mexico",
+      "Mexico" %><br>
+  </fieldset>
 
-  <div class="field">
-    <%= form.label :country %>
-    <%= form.text_field :country %>
-  </div>
 
   <div class="field">
     <%= form.label :email %>

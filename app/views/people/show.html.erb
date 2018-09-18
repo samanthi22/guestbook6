@@ -6,6 +6,15 @@
 </p>
 
 <p>
+  <strong>Photo:</strong>
+    <% if @person.has_photo? %>
+      <%= image_tag @person.photo_path %>
+    <% else %>
+      No photo.
+    <% end %>
+</p>
+
+<p>
   <strong>Secret:</strong>
   <%= @person.secret %>
 </p>
